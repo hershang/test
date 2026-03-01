@@ -56,7 +56,15 @@
 
   <footer>
     <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    <button id="darkModeToggle" type="button">Toggle Dark Mode</button>
+    <div id="toggle-explanation" style="margin-top:1em; font-size:0.95em;">
+      <strong>How dark mode works:</strong>
+      <p>
+        When you click the "Toggle Dark Mode" button, a JavaScript function uses <code>classList.toggle('dark-mode')</code> on the <code>&lt;body&gt;</code>. This adds the <code>dark-mode</code> class if it's not present, or removes it if it is. CSS (in <code>style.css</code>) can then style the page differently for dark mode.
+      </p>
+    </div>
   </footer>
+  <script src="script.js"></script>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
