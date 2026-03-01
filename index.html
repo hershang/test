@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#photo">Photo</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Your Name</h1>
+      <p>Professional tagline or role</p>
+    </section>
+
+    <section id="photo" aria-labelledby="photo-heading">
+      <h2 id="photo-heading">Photo</h2>
+      <figure>
+        <img src="photo.jpg" alt="Portrait of Your Name" width="300" height="300">
+        <figcaption>Your Name</figcaption>
+      </figure>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>Background in IT: experience, skills, and focus areas. Edit this to describe your technical background, roles, and what you bring to the table.</p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <article>
+        <h3>Project One</h3>
+        <p>Brief description of the project and your role or tech stack.</p>
+      </article>
+      <article>
+        <h3>Project Two</h3>
+        <p>Brief description of the project and your role or tech stack.</p>
+      </article>
+      <article>
+        <h3>Project Three</h3>
+        <p>Brief description of the project and your role or tech stack.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
