@@ -1,0 +1,46 @@
+/* Professional color scheme – CSS variables */
+:root {
+  --color-bg: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-text: #500431;
+  --color-text-muted: #4a4a5a;
+  --color-primary: #f510a9;
+  --color-primary-hover: #1d4ed8;
+  --color-accent: #0f172a;
+  --color-border: #e2e8f0;
+  --nav-padding-block: 1rem;
+  --nav-padding-inline: 1.5rem;
+}
+
+/* Base reset for nav list */
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+header nav {
+  padding: var(--nav-padding-block) var(--nav-padding-inline);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+header nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+}
+
+header nav a:hover {
+  color: var(--color-primary-hover);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+}
